@@ -1,17 +1,54 @@
 * {
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     /* box-sizing: border-box; */
 }
 
-.container {
-    background-image: url(../assets/T-Shirt-Apparel-Scene-Mockup-2.jpg);
-    position: absolute;
+body {
+    background-image: url("../assets/pexels-edgars-kisuro-1488463.jpg");
+    /* position: absolute; */
     height: 100vh;
     width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
+    color: white;
+
     /* position: center; */
 
+}
+.container{
+
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    height: 70%;
+justify-content: space-between;}
+#headers{
+    text-align: center;
+    /* margin: auto; */
+    height: 15px;
+}
+p{
+    color: white;
+    font-size: 26px;
+}
+.form{
+    width: 50%;
+    height: 30%;
+    background-color: rgb(191, 195, 193);
+    margin: auto;
+    padding: 20px ;
+    color: black;
+
+}
+.search-clothes{
+    height: 50%;
+    /* padding: 7855px; */
+}
+#clothes{
+    height: 30px;
+    font-size: 14px;
 }
 
 .line {
@@ -23,7 +60,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* width: 100vw; */
+    height: 10%;
     align-items: center;
 }
 .logo{
@@ -60,16 +97,15 @@ nav {
     cursor: pointer;
 
 } 
-.body-section{
-    width: 80vw;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
-}
 .column1 img{
    width: 450px;
    height: 450px;
 
+}
+footer{
+    background: green;
+    width: 80%;
+    margin-top: 50px;
+    padding: 20px ;
+    /* justify-content: flex-end; */
 }
