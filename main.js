@@ -9,39 +9,55 @@ const init = () => {
   inputForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const input = document.getElementById('clothes');
-    console.log(input.value)
+    fetch(`http://localhost:3000/Clothes/${input.value}`)
+    .then(response => response.json())
+    .then(data => fetchClothes(data));
+  });
 
-  //   fetch(`'http://localhost:3000/Clothes/${input.value}`)
-  //   .then(response => response.json())
-  //   .then(data => analyseData(data));
-  // });
-
-  // function analyseData(clothes){
-  //   clothes.forEach(data=>{  
-  //     const ul=document.getElementById('list')
-  //     const li=document.createElement('li')
-  //     li.innerHTML+=data.price;
-  //     ul.appendChild(li)
+  function fetchClothes(clothes){
+      const ul=document.getElementById('list')
+      const li=document.createElement('li')
+      li.innerHTML=`${clothes.price} Ksh for Each of ${clothes.title}`;
+      ul.appendChild(li)
     
-
-//     })
     
-//     }
-  // }
+    }
+    document.getElementById('lucky').addEventListener('submit',(e)=>{
+      e.preventDefault();
+      console.log(e.target.comment.value)
+      
+      })
+     function postComment(newKey){
+      let input={
+
+      }
+     }
+     function fetchComment(postedComment) {
+  return fetch('http://localhost:3000/comments', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(postedComment)
+    })
+    .then(response => response.json())
+    .then(comment => console.log(comment))
+
+}
+
+document.addEventListener('DOMContentLoaded', init);
 
 
-
-
-
-// document.getElementById('search_clothes').addEventListener('submit',searchClothes)
+// document.getElementById('lucky').addEventListener('submit',POST)
 // function fetchData(){
-//   fetch('http://localhost:3000/Clothes')
-// .then(resp=>resp.json())
-// .then(data=>searchClothes(data))
+//   fetch(' http://localhost:3000/Clothes')
+//   .then(resp=>resp.json)
+//   .then(data=>addPost(data))
 // }
-// fetchData()
-
-// function searchClothes(){
-
+// function addPost(){
 
 // }
+
+
+
