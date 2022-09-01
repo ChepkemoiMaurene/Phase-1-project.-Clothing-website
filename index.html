@@ -7,55 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Closet By Mimo</title>
-    
+
 </head>
 
 <body>
     <!--header-->
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <div><img src="./assets/6014699c8539f5fe41e8369d_image6-5.png" alt="logo"></div>
-                <div><h2>Closet By Mimo</h2></div>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Contact us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Our products</a></li>
-                    <li><a href="">SignUp</a></li>
-
-                </ul>
-            </div>
-        </nav>
-
-        <div class="body-section">
-            
-            <div class="column1">
-                <h3> We are <span class="line"> number one online store</span> you can trust</h3>
-                <h1>Dress stylish<br> with us</h1>
-                <img src="./assets/39d791db0f523a83d1438b848c4cbdf1.jpg" alt="mens wear">
-                <H2>Fashion quotes </H2>
-                <p>You can have anything you want in life<br>if you dress for it.
-                    "You can never take too much care over the <br>choice  of your shoes. Too many women think
-                    that they are <br>
-                    unimportant, but the real proof of an elegant woman is what <br> is on her feet."
-                    People will stare.</p>
-
-            </div>
-            <div class="column2">
-                <img src="./assets/1.jpg" alt="">
-                <p>"You gotta have style. It helps you get down the stairs. It helps <br> you get up in the morning. It’s a
-                    way of life. Without it, you’re nobody. <br> I’m not talking about lots of clothes.” "Style is the
-                    only thing you can’t buy. </p>
+    <nav>
+        <div class="logo">
+            <div><img src="./assets/6014699c8539f5fe41e8369d_image6-5.png" alt="logo"></div>
+            <div>
+                <h2>Closet By Mimo</h2>
             </div>
         </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Our products</a></li>
+                <li><a href="">SignUp</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="headers"><h3 > We are <span class="line"> number one online store</span> you can trust</h3>
+        <h1 id="headers">Dress stylish<br> with us</h1>
+        </div>
+
+        <div class="form">
+            <form id="search_clothes" action="" method="POST">
+                <label for="clothes">Select your Type :</label>
+                <select id="clothes" name="clotes">
+                    <option value="Women's Wear">Womens' Wear</option>
+                    <option value="Men's wear">Men's wear</option>
+                    <option value="Babies'wear">Babies'wear</option>
+                    <option value="Designer drip">Designer drip</option>
+                    <option value="Suits">Suits</option>
+                </select>
+                <input type="submit">
+            </form>
+            <ul id="list">
+            </ul>
+        </div>
+        <footer>
+            <div class="comment-section">
+            <form action="" method="POST">
+                <input type="text" placeholder="add comment">
+                <input type="submit" value="Post">
+            </form>
+        </div>
+        <div id="btn">
+            <button>Learn More</button>
+        </div>
+        </footer>
     </div>
 
-    <input type="text">
-    <button type="button">Submit</button>
-    <button type="button">place order</button>
+
+
     <script src="./main.js"></script>
 </body>
 

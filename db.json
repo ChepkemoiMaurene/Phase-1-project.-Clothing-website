@@ -1,0 +1,40 @@
+{
+"Clothes": [
+    {
+      "title": "womens clothes",
+      "content": "Shop with us!",
+      "price":"5000",
+      "id": 1
+
+    },
+    {
+      "title": "mens clothes",
+      "content": "Happy shopping!",
+      "price":"3000",
+      "id": 2
+
+    },
+    {
+      "title": "babies clothes",
+      "content": "i like shopping!",
+      "price":"2000",
+      "id": 3
+
+    },
+    {
+      "title": "Designer drip",
+      "content": "choose variety!",
+      "price":"10000",
+      "id": 4
+
+    },
+    {
+      "title": " suits",
+      "content": " look sharp!",
+      "price":"30000",
+      "id": 5
+
+    }
+
+]
+}
