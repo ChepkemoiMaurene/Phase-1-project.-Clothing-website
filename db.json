@@ -1,40 +1,76 @@
 {
-"Clothes": [
+  "Clothes": [
     {
       "title": "womens clothes",
       "content": "Shop with us!",
-      "price":"5000",
+      "price": "5000",
       "id": 1
-
     },
     {
       "title": "mens clothes",
       "content": "Happy shopping!",
-      "price":"3000",
+      "price": "3000",
       "id": 2
-
     },
     {
       "title": "babies clothes",
       "content": "i like shopping!",
-      "price":"2000",
+      "price": "2000",
       "id": 3
-
     },
     {
       "title": "Designer drip",
       "content": "choose variety!",
-      "price":"10000",
+      "price": "10000",
       "id": 4
-
     },
     {
       "title": " suits",
       "content": " look sharp!",
-      "price":"30000",
+      "price": "30000",
       "id": 5
-
     }
-
-]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "comment": "Thank you for shopping with us"
+    },
+    {
+      "comment": "memso",
+      "id": 2
+    },
+    {
+      "comment": "",
+      "id": 3
+    },
+    {
+      "comment": "memso",
+      "id": 4
+    },
+    {
+      "comment": "memso",
+      "id": 5
+    },
+    {
+      "comment": "memso",
+      "id": 6
+    },
+    {
+      "comment": "memso",
+      "id": 7
+    },
+    {
+      "comment": "memso",
+      "id": 8
+    },
+    {
+      "comment": "ifdszdfghjkl",
+      "id": 9
+    },
+    {
+      "comment": "ifdszdfghjkl",
+      "id": 10
+    }
+  ]
 }
