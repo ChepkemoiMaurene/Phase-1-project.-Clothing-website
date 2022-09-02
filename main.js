@@ -32,12 +32,11 @@ const init = () => {
 
       }
      }
-     function fetchComment(postedComment) {
-  return fetch('http://localhost:3000/comments', {
+    //  function fetchComment(postedComment) {
+  function fetch('http://localhost:3000/clothes',{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json',
       },
       body: JSON.stringify(postedComment)
     })
