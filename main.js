@@ -1,13 +1,7 @@
-// const input = document.getElementById('btn');
-// input.addEventListener('click', function() {
-//   alert('I was clicked!');
-// });
 
 const init = () => {
-  const inputForm =document.getElementById('search_clothes')
-
-  inputForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+  document.getElementById('search_clothes').addEventListener('submit', (e) => {
+    e.preventDefault();
     const input = document.getElementById('clothes');
     fetch(`http://localhost:3000/Clothes/${input.value}`)
     .then(response => response.json())
@@ -20,43 +14,32 @@ const init = () => {
       li.innerHTML=`${clothes.price} Ksh for Each of ${clothes.title}`;
       ul.appendChild(li)
     
+  }
+ document.getElementById('lucky').addEventListener('submit',comment)
     
+ function comment(e){
+      e.preventDefault()
+    let commentSent={
+      comment:e.target.comment.value,
     }
-    document.getElementById('lucky').addEventListener('submit',(e)=>{
-      e.preventDefault();
-      console.log(e.target.comment.value)
-      
+     sentCommentToJson(commentSent)
+    }
+    function sentCommentToJson(sentComment){
+      fetch(' http://localhost:3000/comments',{
+        method:'POST',
+        headers:{
+          'Content-Type':'application/json',
+          Accept:'application/json',
+        },
+        body:JSON.stringify(sentComment)
+
       })
-     function postComment(newKey){
-      let input={
-
-      }
-     }
-    //  function fetchComment(postedComment) {
-  function fetch('http://localhost:3000/clothes',{
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(postedComment)
-    })
-    .then(response => response.json())
-    .then(comment => console.log(comment))
-
-}
+      .then(response=>response.json())
+      // .then(commets=>console.log(commets))
+    }
+  }
 
 document.addEventListener('DOMContentLoaded', init);
 
-
-// document.getElementById('lucky').addEventListener('submit',POST)
-// function fetchData(){
-//   fetch(' http://localhost:3000/Clothes')
-//   .then(resp=>resp.json)
-//   .then(data=>addPost(data))
-// }
-// function addPost(){
-
-// }
-
-
+  
 
