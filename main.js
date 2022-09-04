@@ -1,11 +1,12 @@
 
 const init = () => {
   document.getElementById('search_clothes').addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault();  
     const input = document.getElementById('clothes');
+    console.log (input.value)
     fetch(`http://localhost:3000/Clothes/${input.value}`)
     .then(response => response.json())
-    .then(data => fetchClothes(data));
+    .then(clothes => fetchClothes(clothes));
   });
 
   function fetchClothes(clothes){
@@ -22,7 +23,8 @@ const init = () => {
     let commentSent={
       comment:e.target.comment.value,
     }
-     sentCommentToJson(commentSent)
+    
+    sentCommentToJson(commentSent)
     }
     function sentCommentToJson(sentComment){
       fetch(' http://localhost:3000/comments',{
