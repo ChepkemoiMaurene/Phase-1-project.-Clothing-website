@@ -31,6 +31,21 @@
       "id": 5
     }
   ],
+  "shoes":[
+     {
+      "title": "Designer drip",
+      "content": "choose variety!",
+      "price": "10000",
+      "id": 4
+    },
+    {
+      "title": " suits",
+      "content": " look sharp!",
+      "price": "30000",
+      "id": 5
+    }
+
+  ],
   "comments": [
     {
       "id": 1,
@@ -41,36 +56,104 @@
       "id": 2
     },
     {
-      "comment": "",
+      "comment": "great service",
       "id": 3
     },
     {
-      "comment": "memso",
+      "comment": "great service",
       "id": 4
     },
     {
-      "comment": "memso",
+      "comment": "great service",
       "id": 5
     },
     {
-      "comment": "memso",
+      "comment": "great service",
       "id": 6
     },
     {
-      "comment": "memso",
+      "comment": "great service",
       "id": 7
     },
     {
-      "comment": "memso",
+      "comment": "great service",
       "id": 8
     },
     {
-      "comment": "ifdszdfghjkl",
+      "comment": "great service",
       "id": 9
     },
     {
-      "comment": "ifdszdfghjkl",
+      "comment": "great service",
       "id": 10
+    },
+    {
+      "comment": "great service",
+      "id": 11
+    },
+    {
+      "comment": "great service",
+      "id": 12
+    },
+    {
+      "comment": "great service",
+      "id": 13
+    },
+    {
+      "comment": "great service",
+      "id": 14
+    },
+    {
+      "comment": "great service",
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "id": 28
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
     }
   ]
 }
